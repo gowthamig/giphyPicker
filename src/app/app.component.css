@@ -12,6 +12,12 @@
 .no-data {
     text-align: center;
 }
+
+.card-body
+{
+cursor: pointer;    
+}
+
 #toast-container > div {
     opacity: 1;
   }
