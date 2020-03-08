@@ -1,5 +1,52 @@
 # GiphyPicker
 
+Name: Gowthami Gattineni
+Contact: gattineni.gowthami@gmail.com
+Project: GiphyPicker 
+
+## Abstract
+
+the project aims at building a search platform using GIPHYs API service to search for GIFs. 
+
+### Requirements
+GIFs should render using the MP4 format
+App should load in under 1.5s
+It should work in the most modern browsers
+Enough styling that the app is usable and presentable
+Use your modern UI framework of choice Aurelia/React/Vue/etc.
+An AJAX/Fetch library as well as a utility library for things like encoding query
+parameters or debouncing/throttling is acceptable. No other libraries or
+plugins are acceptable.
+A publicly available URL where the app will live through a service like now.
+
+### Features
+
+Features are listed in priority, some are more difficult than others. Accomplish as
+many as you feel comfortable.
+
+#### core
+ A user should have a clear way to search for GIFs.
+ A user should be able to make their own queries to search for GIFs.
+ A user should be able to easily copy the GIF URL to a chat program.
+#### Nice to Have
+ A user should get results shortly after they&#39;re finished typing.
+ A user should be able to cycle through many GIFs for each search query.
+ A user should be alerted when the API limit is reached.
+ A user should be able to see previous results even after the API limit is
+reached.
+ A user should be able to see 3 random gifs before searching.
+
+## Development Phase
+
+1. Created GIT Hub Repository
+2. Added necessary node packages using npm to the project
+3. Obtained API Key through Giphy Developers Website.
+4. Create a responsive website using Bootstrap Grid System.
+
+## Results
+
+Project URL: 
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.5.
 
 ## Development server
