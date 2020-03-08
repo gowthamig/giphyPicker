@@ -19,4 +19,6 @@ export class GiphyService {
   {
     return this.http.get('https://api.giphy.com/v1/gifs/trending?api_key=NVW9Fmxg1tWDIZ8paN7n375Sslv7guok&limit=25&rating=G');
   }
+
+  
 }

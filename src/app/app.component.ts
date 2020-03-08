@@ -18,18 +18,21 @@ import {
 })
 export class AppComponent implements OnInit{
   title = 'giphy-picker';
-  giphyData : any;
-  gifLoading : any;
+  giphyData : any; // api response data
+  gifLoading : any; //loading message
 
-  faSearch = faSearch;
+  faSearch = faSearch; //search icon 
   
   constructor(public giphyService : GiphyService, public toastr: ToastrService) {}
+ 
   
+  //default gifs shown using following when page is initialized
   getGifs(){
     this.gifLoading = true;
     this.giphyService.getGiphy().subscribe((response: any)=> {this.gifLoading = false; this.giphyData = response.data})
   }
 
+  //this funtion allows user to copy URL to any chat program
   clipCopy() {
     let copyText: any = document.getElementById("myInput");
     copyText.select();
@@ -38,6 +41,7 @@ export class AppComponent implements OnInit{
     this.toastr.success("URL Copied");
   }
 
+  //this function allows user to search
   searchGIF(searchText) {
     if(searchText.length > 0) {
       this.gifLoading = true;
@@ -51,6 +55,7 @@ export class AppComponent implements OnInit{
     }
   }
 
+  //on page load
   ngOnInit(){
     this.getGifs();
   }
