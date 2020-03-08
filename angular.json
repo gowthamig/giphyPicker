@@ -32,6 +32,7 @@
           },
           "configurations": {
             "production": {
+              "ngx-clipboard": "node_modules/ngx-clipboard",
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",

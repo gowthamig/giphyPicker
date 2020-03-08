@@ -29,14 +29,16 @@ export class AppComponent implements OnInit{
   //default gifs shown using following when page is initialized
   getGifs(){
     this.gifLoading = true;
-    this.giphyService.getGiphy().subscribe((response: any)=> {this.gifLoading = false; this.giphyData = response.data})
+    this.giphyService.getGiphy().subscribe((response: any)=> {this.gifLoading = false; this.giphyData = response.data});
   }
 
   //this funtion allows user to copy URL to any chat program
   clipCopy() {
-    let copyText: any = document.getElementById("myInput");
+    let copyText :any;
+    copyText = document.getElementById("myInput");
+    copyText.focus();
     copyText.select();
-    copyText.setSelectionRange(0, 99999)
+    copyText.setSelectionRange(0, 99999);
     document.execCommand("copy");
     this.toastr.success("URL Copied");
   }

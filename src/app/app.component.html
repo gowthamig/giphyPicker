@@ -15,7 +15,7 @@
     <div class="row">
       <div class="col-md-4" *ngFor="let g of giphyData">
         <div class="card mb-4 box-shadow">
-          <div class="card-body" (click)="clipCopy()">
+          <div class="card-body" ngxClipboard [cbContent]="g.images.original.url" (click)="clipCopy()">
             <img class="fixed-ratio-resize" src="{{g.images.original.url}}">
           </div>
           <input [hidden]="true" type="text" [value]="g.images.original.url" id="myInput"> 

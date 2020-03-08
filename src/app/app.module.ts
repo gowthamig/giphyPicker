@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome'
+import { ClipboardModule } from 'ngx-clipboard';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome'
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
     HttpClientModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    ClipboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
