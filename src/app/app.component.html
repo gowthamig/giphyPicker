@@ -1,39 +1,37 @@
-<div class="container-fluid" style="background-color: black;">
+<div class="container" style="background-color: black;">
   <div class="page-header row justify-content-center">
     <h2 style="color: blanchedalmond;">Welcome to GIPHY</h2>      
   </div>
-  <div class="input-group-lg mb-3">
+  <div class="input-group-lg mb-4">
     <div class="row justify-content-center">
-    <input #searchText class="form-control col-md-8" type="text" (keyup.enter)="searchGIF(searchText.value)" placeholder="Search all the GIFs" (input)="$event.target.value">
-    <div class="input-group-append">
-      <button (click)="searchGIF(searchText.value)" type="button"><fa-icon [icon]="faSearch"></fa-icon>
-      </button>
-    </div>
-  </div>
-  
-</div>
-<div class="container">
-  <div class="row">
-    <div class="col-md-4" *ngFor="let g of giphyData">
-      <div class="card mb-4 box-shadow">
-        <div class="card-body" (click)="clipCopy()">
-          <img class="fixed-ratio-resize" src="{{g.images.original.url}}">
-        </div>
-        <input [hidden]="true" type="text" [value]="g.images.original.url" id="myInput"> 
-        <span>   
-          <span class="glyphicon glyphicon-link"></span>
-        </span>
+    <input #searchText class="form-control col-sm-4" type="text" (keyup.enter)="searchGIF(searchText.value)" placeholder="Search all the GIFs" (input)="$event.target.value">
+      <div class="input-group-append">
+        <button (click)="searchGIF(searchText.value)" type="button"><fa-icon [icon]="faSearch"></fa-icon>
+        </button>
       </div>
     </div>
   </div>
-  <div [hidden]="giphyData && giphyData.length > 0" class="no-data">
-    No GIF Available
-  </div>
-  <div [hidden]="!gifLoading" class="no-data">
-    GIF Loading...
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4" *ngFor="let g of giphyData">
+        <div class="card mb-4 box-shadow">
+          <div class="card-body" (click)="clipCopy()">
+            <img class="fixed-ratio-resize" src="{{g.images.original.url}}">
+          </div>
+          <input [hidden]="true" type="text" [value]="g.images.original.url" id="myInput"> 
+          <span>   
+            <span class="glyphicon glyphicon-link"></span>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div [hidden]="giphyData && giphyData.length > 0" class="no-data">
+      No GIF Available
+    </div>
+    <div [hidden]="!gifLoading" class="no-data">
+      GIF Loading...
+    </div>
   </div>
 </div>
-</div>
-
 
 <router-outlet></router-outlet>
