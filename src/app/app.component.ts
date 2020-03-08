@@ -26,7 +26,7 @@ export class AppComponent implements OnInit{
   constructor(public giphyService : GiphyService, public toastr: ToastrService) {}
  
   
-  //default gifs shown using following when page is initialized
+  //default gifs shown using following when search is null 
   getGifs(){
     this.gifLoading = true;
     this.giphyService.getGiphy().subscribe((response: any)=> {this.gifLoading = false; this.giphyData = response.data});
@@ -59,6 +59,6 @@ export class AppComponent implements OnInit{
 
   //on page load
   ngOnInit(){
-    this.getGifs();
+    this.giphyService.getDefaultGiphy().subscribe((response: any)=> {this.gifLoading = false; debugger; this.giphyData = response.data});
   }
 }
