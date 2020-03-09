@@ -52,7 +52,7 @@ many as you feel comfortable.
 
 ## Results
 
-Project URL: [https://giphy-picker-5fiaq2zcd.now.sh/]
+Project URL: https://giphy-picker-5fiaq2zcd.now.sh/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.5.
 
