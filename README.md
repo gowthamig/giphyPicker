@@ -30,17 +30,14 @@ the project aims at building a search platform using GIPHYs API service to searc
 Features are listed in priority, some are more difficult than others. Accomplish as
 many as you feel comfortable.
 
-#### core
+#### Implememted Features
 1. A user should have a clear way to search for GIFs. -- added
 2. A user should be able to make their own queries to search for GIFs. -- added (User can search like happy and cats)
 3. A user should be able to easily copy the GIF URL to a chat program. -- added
-
-#### Nice to Have
-1. A user should get results shortly after they;re finished typing. -- added
-2. A user should be able to cycle through many GIFs for each search query. 
-3. A user should be alerted when the API limit is reached.
-4. A user should be able to see previous results even after the API limit is reached.
+4. A user should get results shortly after they;re finished typing. -- added
 5. A user should be able to see 3 random gifs before searching. -- added
+
+
 
 ## Development Phase
 
