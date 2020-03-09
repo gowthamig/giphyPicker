@@ -1,8 +1,8 @@
 # GiphyPicker
 
-Name: Gowthami Gattineni\n
-Contact: gattineni.gowthami@gmail.com\n
-Project: GiphyPicker\n
+Name: Gowthami Gattineni<br>
+Contact: gattineni.gowthami@gmail.com<br>
+Project: GiphyPicker<br>
 
 ## Abstract
 
